@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:it_fair_web_1/widget/TopNavigation.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -103,6 +103,7 @@ class _HomePageState extends State<HomePage> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
+                              // Left bottom
                               Container(
                                   margin: const EdgeInsets.all(10),
                                   child: Row(
@@ -125,6 +126,7 @@ class _HomePageState extends State<HomePage> {
                                       )
                                     ],
                                   )),
+                              // Rigt Bottom
                               Container(
                                 margin: const EdgeInsets.all(10),
                                 child: const Text(
@@ -147,6 +149,71 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       height: MediaQuery.of(context).size.height,
                       color: const Color(0xff249F9C),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Last Squiz",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 50,
+                            ),
+                          ),
+                          const Text(
+                            "Position 20/100",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(bottom: 30),
+                            width: MediaQuery.of(context).size.width,
+                            height: 2,
+                            color: Colors.black,
+                          ),
+                          const Text(
+                            "Win",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 50,
+                            ),
+                          ),
+                          const Text(
+                            "8",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 50,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(bottom: 30),
+                            width: MediaQuery.of(context).size.width,
+                            height: 2,
+                            color: Colors.black,
+                          ),
+                          const Text(
+                            "Position Rate",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 50,
+                            ),
+                          ),
+                          const Text(
+                            "23",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 50,
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(bottom: 30),
+                            width: MediaQuery.of(context).size.width,
+                            height: 2,
+                            color: Colors.black,
+                          ),
+                        ],
+                      ),
                     )),
               ],
             ),

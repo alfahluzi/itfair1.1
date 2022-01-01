@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:it_fair_web_1/pages/home.dart';
+import 'package:it_fair_web_1/pages/quis.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const HomePage(),
+      home: QuisPage(),
     );
   }
 }
